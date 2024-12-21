@@ -27,17 +27,22 @@
 **Homepage**
 <img src="./image/homepage.png" width="100%">
 
+
 **Catalog**
 <img src="./image/catalog.png" width="100%">
+User browse product
 
 **Product Details**
 <img src="./image/cart.png" width="100%">
+User can see the product details, and select their eg:size,color according to their preferences.
 
 **Shopping Cart and Checkout**
 <img src="./image/checkout.png" width="100%">
+User can add products to their cart, add quantity, and enter their shipping address before doing payment.
 
 **Payment**
 <img src="./image/payment.png" width="100%">
+User make secure payments.
 
 ## ERD
 

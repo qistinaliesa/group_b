@@ -69,6 +69,18 @@ User make secure payments.
 User manage their account.
 <img src="./image/account.png" width="100%">
 
+**Order**
+
+User left reviews and ratings for their orders.
+<img src="./order/account.png" width="100%">
+
+**Management**
+
+Admin track and manage customers orders.
+<img src="./image/manage1.png" width="100%">
+
+<img src="./image/manage2.png" width="100%">
+
 ## ERD
 
 ## Sequence Diagram

@@ -21,6 +21,19 @@
 ## Introduction
 
 ## Objective
+The main goal of the suggested web application is to develop a straightforward and effective online shopping platform that allows customers to explore, choose, and buy products effortlessly. The purpose of the application is to deliver:
+
+Effortless User Experience: An adaptable and user-friendly interface that guarantees fluid navigation between categories, comprehensive product displays, and efficient checkout procedures.
+
+Safe Transactions: Strong payment gateway connections to ensure secure and dependable online transactions.
+
+Support Sellers: Provide tools to manage products, track sales, and promote their business
+
+Thorough Product Administration: An internal system for effectively handling inventory, orders, and customer information.
+
+Accessibility: A design optimized for mobile use to engage a wider audience and guarantee usability across different devices.
+
+This online platform seeks to connect sellers with buyers, establishing a digital marketplace that promotes ease, reliability, and interaction for everyone involved.
 
 ## Features and functionalities
 

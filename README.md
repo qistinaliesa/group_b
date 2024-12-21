@@ -23,4 +23,18 @@
 ## Objective
 
 ## Features and functionalities
-<img src="./images/newcodespace.png" width="50%">
+
+**Homepage**
+<img src="./image/homepage.png" width="100%">
+
+**Catalog**
+<img src="./image/catalog.png" width="100%">
+
+**Product Details**
+<img src="./image/cart.png" width="100%">
+
+**Shopping Cart and Checkout**
+<img src="./image/checkout.png" width="100%">
+
+**Payment**
+<img src="./image/payment.png" width="100%">

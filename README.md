@@ -64,6 +64,10 @@ User can add products to their cart, add quantity, and enter their shipping addr
 User make secure payments.
 <img src="./image/payment.png" width="100%">
 
+**User account**
+
+User manage their account.
+<img src="./image/account.png" width="100%">
 
 ## ERD
 

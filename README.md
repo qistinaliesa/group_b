@@ -88,6 +88,8 @@ Admin track and manage customers orders.
 <img src="./image/manage2.png" width="100%">
 
 ## ERD
+![ERD SOLLY SHOP](https://github.com/user-attachments/assets/5eaefdec-88dd-4826-8dc6-05dae5fc514c)
+
 
 ## Sequence Diagram
 ![onlinemarketsequencediagram drawio (1)](https://github.com/user-attachments/assets/d12d3714-d2ef-4113-ba53-27b11b0079a1)

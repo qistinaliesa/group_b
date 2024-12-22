@@ -72,7 +72,7 @@ User manage their account.
 **Order**
 
 User left reviews and ratings for their orders.
-<img src="./order/account.png" width="100%">
+<img src="./image/order.png" width="100%">
 
 **Management**
 

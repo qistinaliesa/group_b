@@ -40,6 +40,8 @@ This online platform seeks to connect sellers with buyers, establishing a digita
 **Create Account**
 <img src="./createaccount.png" width="100%">
 
+**Login Page**
+<img src="./image/login.png" width="100%">
 
 **Homepage**
 <img src="./image/homepage.png" width="100%">

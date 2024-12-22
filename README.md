@@ -85,6 +85,11 @@ User manage their account.
 User left reviews and ratings for their orders.
 <img src="./image/review.png" width="100%">
 
+**Tracking**
+
+User can click on the tracking button to track their order
+<img src="./image/Tracking.png" width="100%">
+
 **Management**
 
 Admin track and manage customers orders.

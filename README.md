@@ -93,9 +93,9 @@ User can click on the tracking button to track their order
 **Management**
 
 Admin track and manage customers orders.
-<img src="./image/manage1.png" width="100%">
+<img src="./image/admin1.png" width="100%">
 
-<img src="./image/manage2.png" width="100%">
+<img src="./image/admin2.png" width="100%">
 
 ## ERD
 ![ERD SOLLY SHOP](https://github.com/user-attachments/assets/144d1201-5b17-41b1-983e-2d793b872afc)

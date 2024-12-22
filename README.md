@@ -19,6 +19,11 @@
 5.Nurizzati Insyirah Binti Mohd Nazim (2227224)
 
 ## Introduction
+Online markets have become a popular way for people to buy and sell products. Creating a web application for an online market means building a website where users can easily browse, purchase, and sell items. It combines good design, useful features, and secure technology to make the shopping experience smooth and trustworthy.
+
+A basic online market web application usually includes features like user accounts, product categories, a shopping cart, and secure payment options. Other helpful features like search filters, and order tracking can make the platform more user-friendly.
+
+This guide will walk you through the steps needed to bring Solly Shop to life, from planning and designing to building and launching it. Whether you’re starting a new project or learning something new, this introduction will help you understand how to create a functional and easy-to-use online marketplace.
 
 ## Objective
 The main goal of the suggested web application is to develop a straightforward and effective online shopping platform that allows customers to explore, choose, and buy products effortlessly. The purpose of the application is to deliver:

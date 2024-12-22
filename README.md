@@ -73,7 +73,7 @@ User make secure payments.
 **User account**
 
 User manage their account.
-<img src="./image/account.png" width="100%">
+<img src="./image/manageacc.png" width="100%">
 
 **Order**
 

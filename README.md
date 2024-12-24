@@ -109,6 +109,15 @@ Mass Ship
 Sellers can view the status of their bulk shipments on this page to manage orders and arrange deliveries. Once the buyer confirms receipt of the order, the confirmation will be visible here.
 <img src="./image/Seller2.png" width="100%">
 
+Add New Product(Seller)
+
+Seller adds new product.
+<img src="./image/newproduct.png" width="100%">
+
+Return and Refund (seller)
+Seller can view the buyer's return and refund request and take action.
+<img src="./image/returnrefund.png" width="100%">
+
 ## ERD
 ![ERD SOLLY SHOP](https://github.com/user-attachments/assets/144d1201-5b17-41b1-983e-2d793b872afc)
 

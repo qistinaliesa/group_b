@@ -97,6 +97,18 @@ Admin track and manage customers orders.
 
 <img src="./image/Admin1.png" width="100%">
 
+**Seller**
+
+My Order(Seller)
+
+Seller can track their customer orders.
+<img src="./image/Seller1.png" width="100%">
+
+Mass Ship
+
+Sellers can view the status of their bulk shipments on this page to manage orders and arrange deliveries. Once the buyer confirms receipt of the order, the confirmation will be visible here.
+<img src="./image/Seller2.png" width="100%">
+
 ## ERD
 ![ERD SOLLY SHOP](https://github.com/user-attachments/assets/144d1201-5b17-41b1-983e-2d793b872afc)
 
@@ -107,6 +119,7 @@ Admin track and manage customers orders.
 1.Visual Paradigm. (2019). What is Entity Relationship Diagram (ERD)? Visual-Paradigm.com. 
 https://www.visual-paradigm.com/guide/data-modeling/what-is-entity-relationship-diagram/
 ‌
+
 2.Free Design Templates for Every Screen | Figma. (2024). Figma. https://www.figma.com/community/design-templates?resource_type=mixed&editor_type=all&price=all&sort_by=all_time&creators=all
 
 ‌

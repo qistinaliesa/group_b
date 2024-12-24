@@ -115,6 +115,7 @@ Seller adds new product.
 <img src="./image/newproduct.png" width="100%">
 
 Return and Refund (seller)
+
 Seller can view the buyer's return and refund request and take action.
 <img src="./image/returnrefund.png" width="100%">
 

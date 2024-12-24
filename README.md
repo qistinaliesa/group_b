@@ -104,4 +104,10 @@ Admin track and manage customers orders.
 ![onlinemarketsequencediagram drawio (1)](https://github.com/user-attachments/assets/d12d3714-d2ef-4113-ba53-27b11b0079a1)
 
 ## References
+1.Visual Paradigm. (2019). What is Entity Relationship Diagram (ERD)? Visual-Paradigm.com. 
+https://www.visual-paradigm.com/guide/data-modeling/what-is-entity-relationship-diagram/
+‌
+2.Free Design Templates for Every Screen | Figma. (2024). Figma. https://www.figma.com/community/design-templates?resource_type=mixed&editor_type=all&price=all&sort_by=all_time&creators=all
+
+‌
 

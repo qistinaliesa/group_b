@@ -92,7 +92,7 @@ User can click on the tracking button to track their order
 
 **Management**
 
-Admin track and manage customers orders.
+Seller track and manage customers orders.
 <img src="./image/Admin2.png" width="100%">
 
 <img src="./image/Admin1.png" width="100%">

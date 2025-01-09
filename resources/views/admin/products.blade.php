@@ -1,12 +1,10 @@
 @extends('layouts.admin')
 @push('styles')
 @section('content')
-<div class="main-content">
-
     <div class="main-content-inner">
         <div class="main-content-wrap">
             <div class="flex items-center flex-wrap justify-between gap20 mb-27">
-                <h3>Products</h3>
+                <h3>All Products</h3>
                 <ul class="breadcrumbs flex items-center flex-wrap justify-start gap10">
                     <li>
                         <a href="{{route('admin.index')}}">
@@ -17,7 +15,7 @@
                         <i class="icon-chevron-right"></i>
                     </li>
                     <li>
-                        <div class="text-tiny">Products</div>
+                        <div class="text-tiny">All Products</div>
                     </li>
                 </ul>
             </div>
@@ -71,8 +69,8 @@
                                 <td>${{$product->regular_price}}</td>
                                 <td>${{$product->sale_price}}</td>
                                 <td>{{$product->SKU}}</td>
-                                <td>{{$product->category_name}}</td>
-                                <td>{{$product->brand_name}}</td>
+                                <td>{{$product->category->name}}</td>
+                                <td>{{$product->brand->name}}</td>
                                 <td>{{$product->featured == 0 ? "No":"Yes"}}</td>
                                 <td>{{$product->stock_status}}</td>
                                 <td>{{$product->quantity}}</td>
@@ -103,11 +101,9 @@
 
                 <div class="divider"></div>
                 <div class="flex items-center justify-between flex-wrap gap10 wgp-pagination">
-                    {{ $products->links('pagination::bootstrap-5') }}
+                    {{$products->links('pagination::bootstrap-5')}}
                 </div>
             </div>
         </div>
     </div>
-</div>
-
 @endsection

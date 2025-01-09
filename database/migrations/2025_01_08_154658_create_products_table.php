@@ -25,19 +25,18 @@ return new class extends Migration
         $table->unsignedInteger('quantity')->default(10);
         $table->string('image')->nullable();
         $table->text('images')->nullable(); // Added parentheses for nullable()
-        $table->unsignedBigInteger('category_id')->nullable(); // Fixed incorrect use of colon (:)
-        $table->unsignedBigInteger('brand_id')->nullable(); // Fixed incorrect use of colon (:)
+        $table->BigInteger('category_id')->unsigned()->nullable(); // Fixed incorrect use of colon (:)
+        $table->BigInteger('brand_id')->unsigned()->nullable(); // Fixed incorrect use of colon (:)
         $table->timestamps();
-
         $table->foreign('category_id')
             ->references('id')
             ->on('categories')
             ->onDelete('cascade');
-
         $table->foreign('brand_id')
             ->references('id')
             ->on('brands')
             ->onDelete('cascade');
+        $table->timestamps();
     });
 }
 

@@ -89,7 +89,9 @@
                                                 <i class="icon-edit-3"></i>
                                             </div>
                                         </a>
-                                        <form action="#" method="POST">
+                                        <form action="{{route('admin.product.delete',['id'=>$product->id])}}" method="POST">
+                                            @csrf
+                                            @method('DELETE')
                                             <div class="item text-danger delete">
                                                 <i class="icon-trash-2"></i>
                                             </div>
@@ -110,3 +112,14 @@
         </div>
     </div>
 @endsection
+
+@push('scripts')
+<script>
+    $('.delete-form').on('submit', function(e) {
+        e.preventDefault();
+        if(confirm('Are you sure you want to delete this product?')) {
+            this.submit();
+        }
+    });
+</script>
+@endpush

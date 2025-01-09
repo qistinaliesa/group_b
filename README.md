@@ -19,6 +19,11 @@
 5.Nurizzati Insyirah Binti Mohd Nazim (2227224)
 
 ## Introduction
+Online markets have become a popular way for people to buy and sell products. Creating a web application for an online market means building a website where users can easily browse, purchase, and sell items. It combines good design, useful features, and secure technology to make the shopping experience smooth and trustworthy.
+
+A basic online market web application usually includes features like user accounts, product categories, a shopping cart, and secure payment options. Other helpful features like search filters, and order tracking can make the platform more user-friendly.
+
+This guide will walk you through the steps needed to bring Solly Shop to life, from planning and designing to building and launching it. Whether you’re starting a new project or learning something new, this introduction will help you understand how to create a functional and easy-to-use online marketplace.
 
 ## Objective
 The main goal of the suggested web application is to develop a straightforward and effective online shopping platform that allows customers to explore, choose, and buy products effortlessly. The purpose of the application is to deliver:
@@ -73,24 +78,59 @@ User make secure payments.
 **User account**
 
 User manage their account.
-<img src="./image/manageacc.png" width="100%">
+<img src="./image/editprofile.png" width="100%">
 
 **Order**
 
 User left reviews and ratings for their orders.
-<img src="./image/order.png" width="100%">
+<img src="./image/reviewclear.png" width="100%">
+
+**Tracking**
+
+User can click on the tracking button to track their order
+<img src="./image/Tracking.png" width="100%">
 
 **Management**
 
-Admin track and manage customers orders.
-<img src="./image/manage1.png" width="100%">
+Seller track and manage customers orders.
+<img src="./image/Admin2.png" width="100%">
 
-<img src="./image/manage2.png" width="100%">
+<img src="./image/Admin1.png" width="100%">
+
+**Seller**
+
+My Order(Seller)
+
+Seller can track their customer orders.
+<img src="./image/Seller1.png" width="100%">
+
+Mass Ship
+
+Sellers can view the status of their bulk shipments on this page to manage orders and arrange deliveries. Once the buyer confirms receipt of the order, the confirmation will be visible here.
+<img src="./image/Seller2.png" width="100%">
+
+Add New Product(Seller)
+
+Seller adds new product.
+<img src="./image/newproduct.png" width="100%">
+
+Return and Refund (seller)
+
+Seller can view the buyer's return and refund request and take action.
+<img src="./image/returnrefund.png" width="100%">
 
 ## ERD
+![ERD SOLLY SHOP](https://github.com/user-attachments/assets/144d1201-5b17-41b1-983e-2d793b872afc)
 
 ## Sequence Diagram
 ![onlinemarketsequencediagram drawio (1)](https://github.com/user-attachments/assets/d12d3714-d2ef-4113-ba53-27b11b0079a1)
 
 ## References
+1.Visual Paradigm. (2019). What is Entity Relationship Diagram (ERD)? Visual-Paradigm.com. 
+https://www.visual-paradigm.com/guide/data-modeling/what-is-entity-relationship-diagram/
+‌
+
+2.Free Design Templates for Every Screen | Figma. (2024). Figma. https://www.figma.com/community/design-templates?resource_type=mixed&editor_type=all&price=all&sort_by=all_time&creators=all
+
+‌
 

@@ -62,7 +62,11 @@
                                 <td>{{$product->id}}</td>
                                 <td class="pname">
                                     <div class="image">
-                                        <img src="{{asset('uploads/products/thumbnails')}}/{{$product->image}}" alt="{{$product->name}}" class="image">
+                                        @if($product->image)
+                                            <img src="{{ Storage::url($product->image) }}" alt="{{$product->name}}">
+                                        @else
+                                            <img src="{{ asset('images/no-image.png') }}" alt="No Image">
+                                        @endif
                                     </div>
                                     <div class="name">
                                         <a href="#" class="body-title-2">{{$product->name}}</a>
@@ -89,12 +93,13 @@
                                                 <i class="icon-edit-3"></i>
                                             </div>
                                         </a>
-                                        <form action="{{route('admin.product.delete',['id'=>$product->id])}}" method="POST">
+
+                                        <form action="{{ route('admin.product.delete', ['id' => $product->id]) }}" method="POST" class="delete-form">
                                             @csrf
                                             @method('DELETE')
-                                            <div class="item text-danger delete">
+                                            <button type="submit" class="item text-danger delete">
                                                 <i class="icon-trash-2"></i>
-                                            </div>
+                                            </button>
                                         </form>
                                     </div>
                                 </td>
@@ -112,14 +117,14 @@
         </div>
     </div>
 @endsection
-
+@endpush
 @push('scripts')
 <script>
     $('.delete-form').on('submit', function(e) {
         e.preventDefault();
-        if(confirm('Are you sure you want to delete this product?')) {
+        if(confirm('Are you sure you want to delete this brand?')) {
             this.submit();
         }
     });
 </script>
-@endpush
+

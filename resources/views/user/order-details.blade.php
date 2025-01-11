@@ -47,6 +47,9 @@
                         </div>
                     </div>
                     <div class="table-responsive">
+                        @if(Session::has('status'))
+    <p class="alert alert-success">{{Session::get('status')}}</p>
+@endif
                         <table class="table table-striped table-bordered table-transaction">
                             <tr>
                                 <th>Order No</th>
@@ -190,10 +193,32 @@
                         </tr>
                     </table>
                     </div>
+                    @if($order->status=='ordered')
+                    <div class="wg-box mt-5 text-right">
+                        <form action="{{route('user.order.cancel')}}" method="POST">
+                            @csrf
+                            @method("PUT")
+                            <input type="hidden" name="order_id" value="{{$order->id}}" />
+                            <button type="button" class="btn btn-danger cancel-order">Cancel Order</button>
+                        </form>
+                    </div>
+                    @endif
                 </div>
             </div>
+
 
         </div>
     </section>
 </main>
 @endsection
+
+push('scripts')
+<script>
+    $('.delete-form').on('submit', function(e) {
+        e.preventDefault();
+        if(confirm('Are you sure you want to delete this brand?')) {
+            this.submit();
+        }
+    });
+</script>
+@endpush

@@ -286,7 +286,7 @@
 
         <div class="d-flex justify-content-between mb-4 pb-md-2">
           <div class="breadcrumb mb-0 d-none d-md-block flex-grow-1">
-            <a href="{{route(home.index)}}" class="menu-link menu-link_us-s text-uppercase fw-medium">Home</a>
+            <a href="{{route('home.index')}}" class="menu-link menu-link_us-s text-uppercase fw-medium">Home</a>
             <span class="breadcrumb-separator menu-link fw-medium ps-1 pe-1">/</span>
             <a href="#" class="menu-link menu-link_us-s text-uppercase fw-medium">The Shop</a>
           </div>

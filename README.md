@@ -4,7 +4,7 @@
 
 **Title of the project:** Solly Shop
 
-**Section:** 01.
+**Section:** 01
 
 **Team Mates:**
 

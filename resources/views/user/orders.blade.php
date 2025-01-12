@@ -55,9 +55,9 @@
                                     <td class="text-center">${{$order->tax}}</td>
                                     <td class="text-center">${{$order->total}}</td>
                                     <td class="text-center">
-                                        @if($transaction->order->status=='delivered')
+                                        @if($order->status=='delivered')
                                         <span class="badge bg-success">Delivered</span>
-                                    @elseif($transaction->order->status=='canceled')
+                                    @elseif($order->status=='canceled')
                                         <span class="badge bg-danger">Canceled</span>
                                     @else
                                         <span class="badge bg-warning">Ordered</span>

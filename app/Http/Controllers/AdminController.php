@@ -456,7 +456,7 @@ public function orders()
     public function order_items($order_id){
         $order = Order::find($order_id);
           $orderitems = OrderItem::where('order_id',$order_id)->orderBy('id')->paginate(12);
-          $transaction = Transaction::where('order_id',$order_id)->first();
+          $transaction = $order->transaction;
           dd($transaction);
           return view("admin.order-details",compact('order','orderitems','transaction'));
     }

@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 use App\Models\Order;
 use Illuminate\Support\Facades\Auth;
+use App\Models\OrderItem;
+use App\Models\Transaction;
 
 
 use Illuminate\Http\Request;
@@ -22,17 +24,22 @@ class UserController extends Controller
 
     public function order_details($order_id)
 {
-    $order = Order::find($order_id);
-    $orderitems = OrderItem::where('order_id', $order_id)->orderBy('id')->paginate(12);
-    $transaction = Transaction::where('order_id', $order_id)->first();  // Fetch the transaction
+    $order = Order::where('user_id', Auth::user()->id)->where('id', $order_id)->first();
 
-    // Ensure that the transaction exists and pass it to the view
-    if ($transaction) {
-        return view('admin.order-details', compact('order', 'orderitems', 'transaction'));
+    // If no order is found, you can handle this gracefully
+    if (!$order) {
+        return redirect()->route('orders.index')->with('error', 'Order not found.');
     }
 
-    // Handle case if transaction is not found
-    return redirect()->route('admin.orders')->with('error', 'Transaction not found for this order.');
+    // Next, retrieve the order items related to this order.
+    // This is the part where you get all the items for the order.
+    $orderItems = OrderItem::where('order_id', $order_id)->orderBy('id')->paginate(12);
+
+    // Retrieve the transaction for this order
+    $transaction = Transaction::where('order_id', $order_id)->first();
+
+    // Now, return the view and pass the variables to the view using compact
+    return view('user.order-details', compact('order', 'orderItems', 'transaction'));
 }
 
         public function order_cancel(Request $request)

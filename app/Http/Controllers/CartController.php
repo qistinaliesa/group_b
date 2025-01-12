@@ -139,7 +139,7 @@ class CartController extends Controller
         $user_id = Auth::user()->id;
         $address = Address::where('user_id',$user_id)->where('isdefault',true)->first();
 
-        if (!$address)
+        if(!$address)
         {
             @request->validate([
                 'name' => 'required|max:100',
@@ -168,11 +168,16 @@ class CartController extends Controller
             $address->save();
 
             $transaction = new Transaction();
-    $transaction->order_id = $order->id; // Link to the created order
-    $transaction->mode = $request->mode; // Payment method (e.g., 'credit_card')
-    $transaction->status = 'pending'; // Initial status (e.g., 'pending', 'approved', etc.)
-    $transaction->save();
+            $transaction->order_id = $order->id;  // Link transaction to the order
+            $transaction->user_id = $user_id;
+            $transaction->mode = $request->mode;  // 'card', 'paypal', 'cod', etc.
+            $transaction->status = 'pending';  // Or whatever initial status
+            $transaction->save();  // Save the transaction
+
+    // Pass the order and transaction to the view
+    return view('order-confirmation', compact('order', 'transaction'));
         }
+
         $this->setAmountforCheckout();
 
 

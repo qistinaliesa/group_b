@@ -212,7 +212,7 @@
 </main>
 @endsection
 
-push('scripts')
+@push('scripts')
 <script>
     $('.delete-form').on('submit', function(e) {
         e.preventDefault();

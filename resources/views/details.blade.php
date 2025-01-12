@@ -11,25 +11,25 @@
               <div class="swiper-container">
                 <div class="swiper-wrapper">
 
-                    <div class="swiper-slide product-single__image-item">
-                        <img loading="lazy" class="h-auto" src="{{ Storage::url('uploads/products/' . $product->image) }}" width="674" height="674" alt="{{$product->name}}" />
-                        <a data-fancybox="gallery" href="{{ Storage::url('uploads/products/' . $product->image) }}" data-bs-toggle="tooltip" data-bs-placement="left" title="Zoom">
-                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <use href="#icon_zoom" />
-                            </svg>
-                        </a>
-                    </div>
+                  <div class="swiper-slide product-single__image-item">
+                    <img loading="lazy" class="h-auto" src="{{asset('storage/')}}/{{$product->image}}" width="674" height="674" alt="" />
+                    <a data-fancybox="gallery" href="{{asset('storage/')}}/{{$product->image}}" data-bs-toggle="tooltip data-bs-placement="left" title="Zoom">
+                      <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <use href="#icon_zoom" />
+                      </svg>
+                    </a>
+                  </div>
 
-                    @foreach (explode(',', $product->images) as $gimg)
-                    <div class="swiper-slide product-single__image-item">
-                        <img loading="lazy" class="h-auto" src="{{ Storage::url($gimg) }}" width="674" height="674" alt="{{ $product->name }}" />
-                        <a data-fancybox="gallery" href="{{ Storage::url($gimg) }}" data-bs-toggle="tooltip" data-bs-placement="left" title="Zoom">
-                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <use href="#icon_zoom" />
-                            </svg>
-                        </a>
-                    </div>
-                    @endforeach
+                  @foreach (explode(',',$product->images) as $gimg)
+                  <div class="swiper-slide product-single__image-item">
+                    <img loading="lazy" class="h-auto" src="{{asset('storage/')}}/{{$gimg}}" width="674" height="674" alt="" />
+                    <a data-fancybox="gallery" href="{{asset('storage/')}}/{{$gimg}}" data-bs-toggle="tooltip" data-bs-placement="left" title="Zoom">
+                      <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <use href="#icon_zoom" />
+                      </svg>
+                    </a>
+                  </div>
+                  @endforeach
                 </div>
                 <div class="swiper-button-prev"><svg width="7" height="11" viewBox="0 0 7 11"
                     xmlns="http://www.w3.org/2000/svg">
@@ -44,9 +44,9 @@
             <div class="product-single__thumbnail">
               <div class="swiper-container">
                 <div class="swiper-wrapper">
-                  <div class="swiper-slide product-single__image-item"><img loading="lazy" class="h-auto" src="{{asset('uploads/products/thumbnails')}}/{{$product->image}}" width="104" height="104" alt="" /></div>
+                  <div class="swiper-slide product-single__image-item"><img loading="lazy" class="h-auto" src="{{asset('storage/')}}/{{$product->image}}" width="104" height="104" alt="" /></div>
                   @foreach (explode(',',$product->images) as $gimg)
-                  <div class="swiper-slide product-single__image-item"><img loading="lazy" class="h-auto" src="{{asset('uploads/products/thumbnails')}}/{{$gimg}}" width="104" height="104" alt="" /></div>
+                  <div class="swiper-slide product-single__image-item"><img loading="lazy" class="h-auto" src="{{asset('storage/')}}/{{$gimg}}" width="104" height="104" alt="" /></div>
                   @endforeach
                 </div>
               </div>
@@ -396,9 +396,9 @@
             <div class="swiper-slide product-card">
               <div class="pc__img-wrapper">
                 <a href="{{route('shop.product.details',['product_slug'=>$rproduct->slug])}}">
-                    <a href="{{route('shop.product.details',['product_slug'=>$product->slug])}}"><img loading="lazy" src="{{ Storage::url($product->image) }}" width="330" height="400" alt="{{$product->name}}" class="pc__img"></a>
+                  <img loading="lazy" src="{{asset('uploads/products')}}/{{$rproduct->image}}" width="330" height="400" alt="{{$rproduct->name}}" width="330" height="400" alt="{{$rproduct->name}}" class="pc__img">
                   @foreach (explode(",",$rproduct->image) as $gimg)
-                  <img loading="lazy" src="{{ Storage::url($gimg) }}" width="330" height="400" alt="{{$product->name}}" class="pc__img">
+                  <img loading="lazy" src="{{asset('uploads/products')}}/{{$gimg}}" width="330" height="400" alt="{{$rproduct->name}}" width="330" height="400" alt="Cropped Faux leather Jacket" class="pc__img pc__img-second">
                   @endforeach
                 </a>
                 <button

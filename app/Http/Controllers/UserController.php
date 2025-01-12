@@ -21,14 +21,19 @@ class UserController extends Controller
     }
 
     public function order_details($order_id)
-    {
-        $order = Order::where('user_id',Auth::user()->id)->where('id',$order_id)->first();
-        $order = Order::where('user_id',Auth::user()->id)->where('id',$order_id)->first();
-        $orderItems = OrderItem::where('order_id',$order_id)->orderBy('id')->paginate(12);
-        $transaction = Transaction::where('order_id',$order_id)->first();
-        return view('user_order-details',compact('order','orderItems','transaction'));
+{
+    $order = Order::find($order_id);
+    $orderitems = OrderItem::where('order_id', $order_id)->orderBy('id')->paginate(12);
+    $transaction = Transaction::where('order_id', $order_id)->first();  // Fetch the transaction
 
-        }
+    // Ensure that the transaction exists and pass it to the view
+    if ($transaction) {
+        return view('admin.order-details', compact('order', 'orderitems', 'transaction'));
+    }
+
+    // Handle case if transaction is not found
+    return redirect()->route('admin.orders')->with('error', 'Transaction not found for this order.');
+}
 
         public function order_cancel(Request $request)
 {

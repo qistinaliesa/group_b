@@ -1,18 +1,21 @@
 <?php
 
-namespace App\Http\Controllers;
 
+
+namespace App\Http\Controllers;
 use App\Models\Brand;
 use App\Models\Category;
 use App\Models\Product;
-use App\Models\Address;
-use App\Models\Coupon;
-use App\Models\Order;
 use App\Models\OrderItem;
+use App\Models\Address;
+use App\Models\Transaction;
+use App\Models\Coupon;
+use Carbon\Carbon;
+use App\Models\Order;
 use Illuminate\Http\Request;
 use Surfsidemedia\Shoppingcart\Facades\Cart;
-use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Session;
+use Illuminate\Support\Facades\Auth;
 
 
 
@@ -163,6 +166,12 @@ class CartController extends Controller
             $address->user_id = $user_id;
             $address->isdefault = true;
             $address->save();
+
+            $transaction = new Transaction();
+    $transaction->order_id = $order->id; // Link to the created order
+    $transaction->mode = $request->mode; // Payment method (e.g., 'credit_card')
+    $transaction->status = 'pending'; // Initial status (e.g., 'pending', 'approved', etc.)
+    $transaction->save();
         }
         $this->setAmountforCheckout();
 
@@ -204,6 +213,7 @@ class CartController extends Controller
 
        elseif($request-> mode =="cod")
         {
+            $user = Auth::user();
         $transaction = new Transaction();
         $transaction->user_id = $user->id;
         $transaction->order_id = $order->id;
@@ -253,6 +263,12 @@ class CartController extends Controller
         {
             $order = Order::find(Session::get('order_id'));
             return view('order-confirmation',compact('order'));
+
+            $transaction = new Transaction();
+            $transaction->order_id = $order->id; // Set order_id to associate transaction
+            $transaction->mode = $request->payment_method; // Payment method like 'credit_card', 'paypal', etc.
+            $transaction->status = 'pending'; // Set initial transaction status
+            $transaction->save();
         }
         return redirect()->route('cart.index');
     }

@@ -45,7 +45,7 @@
           </div>
           <div class="order-info__item">
             <label>Date</label>
-            <span>{{$order-created_at}}</span>
+            <span>{{ $order->created_at }}</span>
           </div>
           <div class="order-info__item">
             <label>Total</label>

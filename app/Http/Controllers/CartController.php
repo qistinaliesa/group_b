@@ -8,9 +8,12 @@ use App\Models\Product;
 use App\Models\Address;
 use App\Models\Coupon;
 use App\Models\Order;
+use App\Models\OrderItem;
 use Illuminate\Http\Request;
 use Surfsidemedia\Shoppingcart\Facades\Cart;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Session;
+
 
 
 
@@ -19,7 +22,7 @@ class CartController extends Controller
     public function index()
     {
         $items = Cart::instance('cart')->content();
-        return view('user.cart', compact('items'));
+        return view('cart', compact('items'));
     }
 
     public function add_to_cart(Request $request)
@@ -125,7 +128,7 @@ class CartController extends Controller
         }
 
         $address = Address::where('user_id',Auth::user()->id)->where('isdefault',1)->first();
-        return view('user.checkout',compact('address'));
+        return view('checkout',compact('address'));
     }
 
     public function place_an_order(Request $request)
@@ -133,7 +136,7 @@ class CartController extends Controller
         $user_id = Auth::user()->id;
         $address = Address::where('user_id',$user_id)->where('isdefault',true)->first();
 
-        if(!address)
+        if (!$address)
         {
             @request->validate([
                 'name' => 'required|max:100',
@@ -208,7 +211,7 @@ class CartController extends Controller
         $transaction->status = "pending";
         $transaction->save();
         }
-        Cart::instance('cart')>destroy();
+        Cart::instance('cart')->destroy();
         Session::forget('checkout');
         Session::forget('coupon');
         Session::forget('discounts');
@@ -246,7 +249,7 @@ class CartController extends Controller
 
     public function order_confirmation()
     {
-        if(Session::has('order_id'));
+        if(Session::has('order_id'))
         {
             $order = Order::find(Session::get('order_id'));
             return view('order-confirmation',compact('order'));

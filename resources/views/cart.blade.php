@@ -45,9 +45,11 @@
                 @foreach($items as $item)
               <tr>
                 <td>
-                  <div class="shopping-cart__product-item">
-                    <img loading="lazy" src="{{asset('uploads/products/thumbnails')}}/{{$item->model->image}}" width="120" height="120" alt="{{$item->name}}" />
-                  </div>
+                    <div class="shopping-cart__product-item">
+                        {{-- <img src="{{asset('uploads/products/thumbnails')}}/{{$orderitem->product->image}}" alt="" class="image"> --}}
+                        <img loading="lazy" src="{{ Storage::url($item->model->image) }}" width="120" height="120" alt="{{$item->name}}" />
+
+                    </div>
                 </td>
                 <td>
                   <div class="shopping-cart__product-item__detail">
@@ -136,7 +138,7 @@
             </div>
             <div class="mobile_fixed-btn_wrapper">
               <div class="button-wrapper container">
-                <a href="checkout.html" class="btn btn-primary btn-checkout">PROCEED TO CHECKOUT</a>
+                <a href="{{route('cart.checkout')}}" class="btn btn-primary btn-checkout">PROCEED TO CHECKOUT</a>
               </div>
             </div>
           </div>

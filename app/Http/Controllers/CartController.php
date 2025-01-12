@@ -19,7 +19,7 @@ class CartController extends Controller
     public function index()
     {
         $items = Cart::instance('cart')->content();
-        return view('cart', compact('items'));
+        return view('user.cart', compact('items'));
     }
 
     public function add_to_cart(Request $request)
@@ -125,7 +125,7 @@ class CartController extends Controller
         }
 
         $address = Address::where('user_id',Auth::user()->id)->where('isdefault',1)->first();
-        return view('checkout',compact('address'));
+        return view('user.checkout',compact('address'));
     }
 
     public function place_an_order(Request $request)

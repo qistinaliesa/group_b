@@ -395,9 +395,9 @@
             <div class="swiper-slide product-card">
               <div class="pc__img-wrapper">
                 <a href="{{route('shop.product.details', ['product_slug'=>$rproduct->slug])}}">
-                  <img loading="lazy" src="{{asset('uploads/products')}}/{{$rproduct->image}}" width="330" height="400" alt="{{$rproduct->name}}" class="pc__img">
-                  @foreach(explode(",",$product->images) as $gimg)
-                  <img loading="lazy" src="{{asset('uploads/products')}}/{{$gimg}}" width="330" height="400" alt="{{$rproduct->name}}" class="pc__img pc__img-second">
+                  <img loading="lazy" src="{{asset('storage/')}}/{{$rproduct->image}}" width="330" height="400" alt="{{$rproduct->name}}" class="pc__img">
+                  @foreach(explode(",",$rproduct->images) as $gimg)
+                  <img loading="lazy" src="{{asset('storage/')}}/{{$gimg}}" width="330" height="400" alt="{{$rproduct->name}}" class="pc__img pc__img-second">
                     @endforeach
                 </a>
                 @if(Cart::instance('cart')->content()->where('id', $rproduct->id)->count() > 0)

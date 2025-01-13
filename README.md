@@ -125,6 +125,90 @@ Seller can view the buyer's return and refund request and take action.
 ## Sequence Diagram
 ![onlinemarketsequencediagram drawio (1)](https://github.com/user-attachments/assets/d12d3714-d2ef-4113-ba53-27b11b0079a1)
 
+## Project system captured screen and explanation
+**Customer**
+Homepage
+
+<img src="./image/image/homepage.png" width="100%">
+
+Create Account
+
+<img src="./image/image/create acc.png" width="100%">
+
+Login
+
+<img src="./image/image/login.png" width="100%">
+
+Shop Page
+
+![shoppage](https://github.com/user-attachments/assets/7c050112-4ef6-4fd0-b92a-74897fb8d633)
+
+Product Details
+
+![productdetails](https://github.com/user-attachments/assets/68832e8a-321e-476c-9e7d-cb2d79cef17b)
+
+
+Cart
+<img src="./image/Cart.png" width="100%">
+
+Shipping and Checkout
+<img src="./image/Shipping and checkout.png" width="100%">
+
+Order Confirmation
+<img src="./image/image/confirmation1.png" width="100%">
+<img src="./image/image/confirmation2.png" width="100%">
+
+User Order List
+<img src="./image/image/order.png" width="100%">
+
+User Order Details
+<img src="./image/image/orderdetails.png" width="100%">
+<img src="./image/image/orderdetails1.png" width="100%">
+
+**Admin**
+
+Admin page
+
+<img src="./image/image/admin page.png" width="100%">
+
+Add Product
+
+<img src="./image/image/add product.png" width="100%">
+
+Product List
+
+![productlist](https://github.com/user-attachments/assets/047e711b-64c1-441f-822d-f7183118eeae)
+
+
+
+
+Add brand
+
+<img src="./image/image/add brand.png" width="100%">
+
+Brand List
+
+<img src="./image/image/view brand.png" width="100%">
+
+Add Category
+
+<img src="./image/image/add category.png" width="100%">
+
+Category List
+
+![categorylist](https://github.com/user-attachments/assets/ad4dbd29-9e39-4743-a951-6935f1fdbbc3)
+
+Order List
+
+![Screenshot 2025-01-13 203014](https://github.com/user-attachments/assets/e1dc6a67-3fb3-47d5-a208-049e67564398)
+
+Order Details
+
+
+
+
+## What is the challenge/difficulties to develop the application
+
 ## References
 1.Visual Paradigm. (2019). What is Entity Relationship Diagram (ERD)? Visual-Paradigm.com. 
 https://www.visual-paradigm.com/guide/data-modeling/what-is-entity-relationship-diagram/

@@ -196,6 +196,8 @@ Add Category
 
 Category List
 
+![categorylist](https://github.com/user-attachments/assets/ad4dbd29-9e39-4743-a951-6935f1fdbbc3)
+
 Order List
 
 Order Details

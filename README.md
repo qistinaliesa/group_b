@@ -144,10 +144,10 @@ Shop Page
 Product Details
 
 Cart
-<img src="./image/image/Cart.png" width="100%">
+<img src="./image/Cart.png" width="100%">
 
 Shipping and Checkout
-<img src="./image/image/Shippingandcheckout.png" width="100%">
+<img src="./image/Shipping and checkout.png" width="100%">
 
 Order Confirmation
 <img src="./image/image/confirmation1.png" width="100%">

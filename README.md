@@ -150,8 +150,14 @@ Shipping and Checkout
 <img src="./image/image/Shipping and checkout.png" width="100%">
 
 Order Confirmation
+<img src="./image/image/confirmation1.png" width="100%">
+<img src="./image/image/confirmation2.png" width="100%">
+
+User Order List
+<img src="./image/image/order.png" width="100%">
 
 User Order Details
+<img src="./image/image/orderdetails.png" width="100%">
 
 **Admin**
 

@@ -213,6 +213,10 @@ Order Details
 
 Initially, our group faced some difficulties in setting up collaboration among team members on Github and VSCode. Syncing the project with others proved to be challenge as not everyone was familiar with these applications. Therefore, this caused confusion in maintaining a consistent system code.
 
+**Composer Installation Failure**
+
+One member encountered difficulties running the composer install command due to multiple failed dependency installations, including phpunit/phpunit and symfony/polyfill-ctype. After troubleshooting, it was found that the issue was caused by interference from antivirus software and the Windows Search service. This problem delayed the project setup for the member and required uninstalling the antivirus and stopping the Windows Search service to resolve the issue. Once these steps were taken, the installation completed successfully.
+
 ## References
 1.Visual Paradigm. (2019). What is Entity Relationship Diagram (ERD)? Visual-Paradigm.com. 
 https://www.visual-paradigm.com/guide/data-modeling/what-is-entity-relationship-diagram/

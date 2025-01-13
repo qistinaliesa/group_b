@@ -112,7 +112,7 @@
 
                                     <td class="pname">
                                         <div class="image">
-                                            <img src="{{asset('uploads/products/thumbnails')}}/{{$orderitem->product->image}}" alt="" class="image">
+                                            <img src="{{asset('storage/')}}/{{$orderitem->product->image}}" alt="" class="image">
                                         </div>
                                         <div class="name">
                                             <a href="{{route('shop.product.details',["product_slug"=>$orderitem->product->slug])}}" target="_blank" class="body-title-2">{{$orderitem->product->name}}</a>

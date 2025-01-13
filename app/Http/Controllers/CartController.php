@@ -136,105 +136,87 @@ class CartController extends Controller
     }
 
     public function place_an_order(Request $request)
-    {
-        $user_id = Auth::user()->id;
-        $address = Address::where('user_id',$user_id)->where('isdefault',true)->first();
+{
+    $user_id = Auth::user()->id;
+    $address = Address::where('user_id', $user_id)->where('isdefault', true)->first();
 
-        if(!$address)
-        {
-            $request->validate([
-                'name' => 'required|max:100',
-                'phone' => 'required|numeric|digits:10',
-                'zip' => 'required|numeric|digits:6',
-                'state' => 'required',
-                'city' => 'required',
-                'address' => 'required',
-                'locality' =>  'required',
-                'landmark' => 'required',
+    if (!$address) {
+        // Address creation if no default address exists
+        $request->validate([
+            'name' => 'required|max:100',
+            'phone' => 'required|numeric|digits:10',
+            'zip' => 'required|numeric|digits:6',
+            'state' => 'required',
+            'city' => 'required',
+            'address' => 'required',
+            'locality' => 'required',
+            'landmark' => 'required',
+        ]);
 
-            ]);
-
-            $address = new Address();
-            $address->name = $request->name;
-            $address->phone = $request->phone;
-            $address->zip = $request->zip;
-            $address->state = $request->state;
-            $address->city = $request->city;
-            $address->address = $request->address;
-            $address->locality = $request->locality;
-            $address->landmark = $request->landmark;
-            $address->country = 'Malaysia';
-            $address->user_id = $user_id;
-            $address->isdefault = true;
-            $address->save();
-
-            $transaction = new Transaction();
-            $transaction->order_id = $order->id;  // Link transaction to the order
-            $transaction->user_id = $user_id;
-            $transaction->mode = $request->mode;  // 'card', 'paypal', 'cod', etc.
-            $transaction->status = 'pending';  // Or whatever initial status
-            $transaction->save();  // Save the transaction
-
-    // Pass the order and transaction to the view
-    return view('order-confirmation', compact('order', 'transaction'));
-        }
-
-        $this->setAmountforCheckout();
-
-
-        $order = new Order();
-        $order->user_id = $user_id;
-        $order->subtotal = Session::get('checkout')['subtotal'];
-        $order->discount = Session::get('checkout')['discount'];
-        $order->tax = Session::get('checkout')['tax'];
-        $order->total = Session::get('checkout')['total'];
-        $order->name = $address->name;
-        $order->phone = $address->phone;
-        $order->locality = $address->locality;
-        $order->address = $address->address;
-        $order->city = $address->city;
-        $order->state = $address->state;
-        $order->country = $address->country;
-        $order->landmark = $address->landmark;
-        $order->zip = $address->zip;
-        $order->save();
-
-        foreach(Cart::instance('cart')->content() as $item)
-        {
-            $orderItem = new OrderItem();
-            $orderItem->product_id = $item->id;
-            $orderItem->order_id = $order->id;
-            $orderItem->price = $item->price;
-            $orderItem->quantity = $item->qty;
-            $order->save();
-        }
-        if($request-> mode =="card")
-        {
-
-        }
-        elseif($request-> mode =="paypal")
-        {
-
-        }
-
-       elseif($request-> mode =="cod")
-        {
-            $user = Auth::user();
-        $transaction = new Transaction();
-        $transaction->user_id = $user->id;
-        $transaction->order_id = $order->id;
-        $transaction->mode = $request->mode;
-        $transaction->status = "pending";
-        $transaction->save();
-        }
-        Cart::instance('cart')->destroy();
-        Session::forget('checkout');
-        Session::forget('coupon');
-        Session::forget('discounts');
-        Session::put('order_id',$order->id);
-        return redirect()->route('cart.order.confirmation',compact('order'));
-
+        $address = new Address();
+        $address->name = $request->name;
+        $address->phone = $request->phone;
+        $address->zip = $request->zip;
+        $address->state = $request->state;
+        $address->city = $request->city;
+        $address->address = $request->address;
+        $address->locality = $request->locality;
+        $address->landmark = $request->landmark;
+        $address->country = 'Malaysia';
+        $address->user_id = $user_id;
+        $address->isdefault = true;
+        $address->save();
     }
+
+    // Set checkout amounts
+    $this->setAmountforCheckout();
+
+    // Create Order
+    $order = new Order();
+    $order->user_id = $user_id;
+    $order->subtotal = Session::get('checkout')['subtotal'];
+    $order->discount = Session::get('checkout')['discount'];
+    $order->tax = Session::get('checkout')['tax'];
+    $order->total = Session::get('checkout')['total'];
+    $order->name = $address->name;
+    $order->phone = $address->phone;
+    $order->locality = $address->locality;
+    $order->address = $address->address;
+    $order->city = $address->city;
+    $order->state = $address->state;
+    $order->country = $address->country;
+    $order->landmark = $address->landmark;
+    $order->zip = $address->zip;
+    $order->save();  // Save order before adding order items
+
+    // Create OrderItems from the cart
+    foreach (Cart::instance('cart')->content() as $item) {
+        OrderItem::create([
+            'order_id' => $order->id,
+            'product_id' => $item->id,
+            'price' => $item->price,
+            'quantity' => $item->qty,
+        ]);
+    }
+
+    // Create a transaction for the order based on payment method
+    $transaction = new Transaction();
+    $transaction->user_id = $user_id;
+    $transaction->order_id = $order->id;
+    $transaction->mode = $request->mode; // Payment method (card, paypal, cod, etc.)
+    $transaction->status = 'pending'; // Initial status
+    $transaction->save();  // Save transaction
+
+    // Clear the cart and session data
+    Cart::instance('cart')->destroy();
+    Session::forget('checkout');
+    Session::forget('coupon');
+    Session::forget('discounts');
+    Session::put('order_id', $order->id);
+
+    // Redirect to confirmation view
+    return redirect()->route('cart.order.confirmation', compact('order'));
+}
 
     public function setAmountforCheckout()
     {

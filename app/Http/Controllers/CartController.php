@@ -20,6 +20,7 @@ use Illuminate\Support\Facades\Auth;
 
 
 
+
 class CartController extends Controller
 {
     public function index()
@@ -141,7 +142,7 @@ class CartController extends Controller
 
         if(!$address)
         {
-            @request->validate([
+            $request->validate([
                 'name' => 'required|max:100',
                 'phone' => 'required|numeric|digits:10',
                 'zip' => 'required|numeric|digits:6',

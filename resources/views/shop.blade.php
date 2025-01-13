@@ -27,7 +27,7 @@
 
         <div class="pt-4 pt-lg-0"></div>
 
-        <div class="accordion" id="categories-list">
+        {{--))--<div class="accordion" id="categories-list">
           <div class="accordion-item mb-4 pb-3">
             <h5 class="accordion-header" id="accordion-heading-1">
               <button class="accordion-button p-0 border-0 fs-5 text-uppercase" type="button" data-bs-toggle="collapse"
@@ -188,7 +188,7 @@
                   <span class="price-range__min">RM1</span>
                 </div>
                 <div>
-                  <span class="text-secondary">Max Price: </span>
+                  <span class="text-secondary">Max Price: </span>--}}
                   <span class="price-range__max">RM1000</span>
                 </div>
               </div>

@@ -210,6 +210,7 @@ Order Details
 
 ## What is the challenge/difficulties to develop the application
 **Collaboration with Github and VSCode**
+
 Initially, our group faced some difficulties in setting up collaboration among team members on Github and VSCode. Syncing the project with others proved to be challenge as not everyone was familiar with these applications. Therefore, this caused confusion in maintaining a consistent system code.
 
 ## References

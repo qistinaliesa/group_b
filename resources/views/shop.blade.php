@@ -188,8 +188,8 @@
                   <span class="price-range__min">RM1</span>
                 </div>
                 <div>
-                  <span class="text-secondary">Max Price: </span>--}}
-                  <span class="price-range__max">RM1000</span>
+                  <span class="text-secondary">Max Price: </span>
+                  <span class="price-range__max">RM1000</span>--}}
                 </div>
               </div>
             </div>

@@ -26,7 +26,7 @@ class WishlistController extends Controller
     public function index()
     {
         $items = Cart::instance('wishlist')->content();
-        return view('user.wishlist',compact('items'));
+        return view('wishlist',compact('items'));
     }
 
     public function add_to_wishlist(Request $request)

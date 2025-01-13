@@ -55,13 +55,13 @@ class ShopController extends Controller
         ->orWhereBetween('sale_price', [$min_price, $max_price]);
        })
                    ->orderBy($o_column,$o_order)->paginate($size);
-        return view('user.shop', compact('products', 'size', 'order', 'brands', 'f_brands', 'categories', 'f_categories', 'min_price', 'max_price'));
+        return view('shop', compact('products', 'size', 'order', 'brands', 'f_brands', 'categories', 'f_categories', 'min_price', 'max_price'));
         }
 
     public function product_details($product_slug)
     {
         $product = Product::where('slug', $product_slug)->first();
         $rproduct = Product::where('slug', '<>', $product_slug)->get()->take(8);
-        return view('user.details', compact('product', 'rproduct'));
+        return view('details', compact('product', 'rproduct'));
     }
 }

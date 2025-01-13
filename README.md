@@ -204,7 +204,7 @@ Order List
 
 Order Details
 
-
+![adminorderdetails](https://github.com/user-attachments/assets/fadfe449-44dc-4446-b093-9ad409360b74)
 
 
 ## What is the challenge/difficulties to develop the application

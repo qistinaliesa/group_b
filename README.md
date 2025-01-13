@@ -207,6 +207,9 @@ Order Details
 
 ![adminorderdetails](https://github.com/user-attachments/assets/fadfe449-44dc-4446-b093-9ad409360b74)
 
+Admin Update Order Status
+<img src="./image/image/update.png" width="100%">
+
 
 ## What is the challenge/difficulties to develop the application
 **Collaboration with Github and VSCode**

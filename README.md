@@ -126,6 +126,33 @@ Seller can view the buyer's return and refund request and take action.
 ![onlinemarketsequencediagram drawio (1)](https://github.com/user-attachments/assets/d12d3714-d2ef-4113-ba53-27b11b0079a1)
 
 ## Project system captured screen and explanation
+**Customer**
+Homepage
+
+<img src="./image/image/homepage.png" width="100%">
+
+Create Account
+
+<img src="./image/image/create acc.png" width="100%">
+
+Login
+
+<img src="./image/image/login.png" width="100%">
+
+**Admin**
+
+Admin page
+
+<img src="./image/image/admin page.png" width="100%">
+
+Add brand
+
+<img src="./image/image/add brand.png" width="100%">
+
+Brand List
+
+<img src="./image/image/view brand.png" width="100%">
+
 
 ## What is the challenge/difficulties to develop the application
 

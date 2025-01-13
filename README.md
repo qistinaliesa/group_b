@@ -140,7 +140,7 @@ Login
 <img src="./image/image/login.png" width="100%">
 
 Shop Page
-
+![shoppage](https://github.com/user-attachments/assets/7c050112-4ef6-4fd0-b92a-74897fb8d633)
 Product Details
 
 Cart

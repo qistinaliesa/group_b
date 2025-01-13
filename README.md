@@ -139,11 +139,32 @@ Login
 
 <img src="./image/image/login.png" width="100%">
 
+Shop Page
+
+Product Details
+
+Cart
+
+Shipping and Checkout
+
+Order Confirmation
+
+User Order Details
+
 **Admin**
 
 Admin page
 
 <img src="./image/image/admin page.png" width="100%">
+
+Add Product
+
+<img src="./image/image/add product.png" width="100%">
+
+Product List
+
+
+
 
 Add brand
 
@@ -152,6 +173,18 @@ Add brand
 Brand List
 
 <img src="./image/image/view brand.png" width="100%">
+
+Add Category
+
+<img src="./image/image/add category.png" width="100%">
+
+Category List
+
+Order List
+
+Order Details
+
+
 
 
 ## What is the challenge/difficulties to develop the application

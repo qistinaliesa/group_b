@@ -125,6 +125,10 @@ Seller can view the buyer's return and refund request and take action.
 ## Sequence Diagram
 ![onlinemarketsequencediagram drawio (1)](https://github.com/user-attachments/assets/d12d3714-d2ef-4113-ba53-27b11b0079a1)
 
+## Project system captured screen and explanation
+
+## What is the challenge/difficulties to develop the application
+
 ## References
 1.Visual Paradigm. (2019). What is Entity Relationship Diagram (ERD)? Visual-Paradigm.com. 
 https://www.visual-paradigm.com/guide/data-modeling/what-is-entity-relationship-diagram/

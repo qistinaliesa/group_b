@@ -162,8 +162,9 @@ User Order List
 <img src="./image/image/order.png" width="100%">
 
 User Order Details
-<img src="./image/image/orderdetails.png" width="100%">
-<img src="./image/image/orderdetails1.png" width="100%">
+![orderdetails1](https://github.com/user-attachments/assets/b912169f-20bd-4b24-ba18-1a242b9e5ebe)
+![orderdetails2](https://github.com/user-attachments/assets/ef154230-6fda-4288-8b6e-435dd8e472be)
+![orderdetails3](https://github.com/user-attachments/assets/5f5fdd96-06af-4f3c-9e2a-6de0b0bad9f8)
 
 **Admin**
 
@@ -204,10 +205,20 @@ Order List
 
 Order Details
 
+![adminorderdetails](https://github.com/user-attachments/assets/fadfe449-44dc-4446-b093-9ad409360b74)
 
+Admin Update Order Status
+<img src="./image/image/update.png" width="100%">
 
 
 ## What is the challenge/difficulties to develop the application
+**Collaboration with Github and VSCode**
+
+Initially, our group faced some difficulties in setting up collaboration among team members on Github and VSCode. Syncing the project with others proved to be challenge as not everyone was familiar with these applications. Therefore, this caused confusion in maintaining a consistent system code.
+
+**Composer Installation Failure**
+
+One member encountered difficulties running the composer install command due to multiple failed dependency installations, including phpunit/phpunit and symfony/polyfill-ctype. After troubleshooting with the lecturer's guidance, it was found that the issue was caused by interference from antivirus software and the Windows Search service. This problem delayed the project setup for the member and required uninstalling the antivirus and stopping the Windows Search service to resolve the issue. Once these steps were taken, the installation was completed successfully.
 
 ## References
 1.Visual Paradigm. (2019). What is Entity Relationship Diagram (ERD)? Visual-Paradigm.com. 

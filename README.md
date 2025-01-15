@@ -153,7 +153,7 @@ User can browse products here.
 **Product Details**
 
 User view product details, add the product to the cart, user also can select the quantity.
-![productdetails](https://github.com/user-attachments/assets/68832e8a-321e-476c-9e7d-cb2d79cef17b)
+![imagebaharu](https://github.com/user-attachments/assets/597cdd83-ea96-4b44-bd37-d9ff5c3bddc3)
 
 
 **Cart**

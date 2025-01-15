@@ -186,14 +186,17 @@ User Order Details
 
 **Admin page**
 
+admin dashboard
 <img src="./image/image/admin page.png" width="100%">
 
 **Add Product**
 
+admin add product
 <img src="./image/image/add product.png" width="100%">
 
 **Product List**
 
+admin view, edit, delete product list.
 ![productlist](https://github.com/user-attachments/assets/047e711b-64c1-441f-822d-f7183118eeae)
 
 
@@ -201,37 +204,47 @@ User Order Details
 
 **Add brand**
 
+admin add brand
 <img src="./image/image/add brand.png" width="100%">
 
 **Brand List**
 
+admin view, edit, delete brand list.
 <img src="./image/image/view brand.png" width="100%">
 
 **Add Category**
 
+admin add category
 <img src="./image/image/add category.png" width="100%">
 
 **Category List**
 
+admin view, edit, delete category list.
 ![categorylist](https://github.com/user-attachments/assets/ad4dbd29-9e39-4743-a951-6935f1fdbbc3)
 
 **Order List**
 
+admin view customer's orders
 ![Screenshot 2025-01-13 203014](https://github.com/user-attachments/assets/e1dc6a67-3fb3-47d5-a208-049e67564398)
 
 **Order Details**
 
+admin view order details
 ![adminorderdetails](https://github.com/user-attachments/assets/fadfe449-44dc-4446-b093-9ad409360b74)
 
 **Admin Update Order Status**
+
+admin update order status(ordered, delievered, cancel)
 <img src="./image/image/update.png" width="100%">
 
 **Coupon Add and Update(Admin & Seller)**
 
+admin add coupon code
 <img width="1440" alt="Screenshot 2025-01-14 at 10 50 05 AM" src="https://github.com/user-attachments/assets/7d244d44-5e1e-47b3-97b8-2d0e39a8566f" />
 
 **Coupon Lists**
 
+admin view, edit and delete coupon list
 <img width="1440" alt="Screenshot 2025-01-14 at 10 49 45 AM" src="https://github.com/user-attachments/assets/00e4b50a-dd7d-4016-b953-321c05deda6a" />
 
 

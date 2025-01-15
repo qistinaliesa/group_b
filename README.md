@@ -129,36 +129,49 @@ Seller can view the buyer's return and refund request and take action.
 **Customer**
 Homepage
 
+Homepage of our website.
 <img src="./image/image/homepage.png" width="100%">
 
 Create Account
 
+User can create account if they haven't.
 <img src="./image/image/create acc.png" width="100%">
 
 Login
 
+User login to the account.
 <img src="./image/image/login.png" width="100%">
 
 Shop Page
 
+User can browse products here.
 ![shoppage](https://github.com/user-attachments/assets/7c050112-4ef6-4fd0-b92a-74897fb8d633)
 
 Product Details
 
+User view product details, add the product to the cart, user also can select the quantity.
 ![productdetails](https://github.com/user-attachments/assets/68832e8a-321e-476c-9e7d-cb2d79cef17b)
 
 
 Cart
+
+User view cart, if the user want to delete the cart they can just simply click the clear cart button.
 <img src="./image/Cart.png" width="100%">
 
 Shipping and Checkout
+
+User fill in their details(eg;address and name), and proceed to checkout.
 <img src="./image/Shipping and checkout.png" width="100%">
 
 Order Confirmation
+
+User received order confirmation.
 <img src="./image/image/confirmation1.png" width="100%">
 <img src="./image/image/confirmation2.png" width="100%">
 
 User Order List
+
+User can view their order history.
 <img src="./image/image/order.png" width="100%">
 
 User Order Details

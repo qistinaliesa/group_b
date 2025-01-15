@@ -128,50 +128,51 @@ Seller can view the buyer's return and refund request and take action.
 # FINAL REPORT
 
 ## Project system captured screen and explanation
-**Customer**
-Homepage
+### Customer
+
+**Homepage**
 
 Homepage of our website.
 <img src="./image/image/homepage.png" width="100%">
 
-Create Account
+**Create Account**
 
 User can create account if they haven't.
 <img src="./image/image/create acc.png" width="100%">
 
-Login
+**Login**
 
 User login to the account.
 <img src="./image/image/login.png" width="100%">
 
-Shop Page
+**Shop Page**
 
 User can browse products here.
 ![shoppage](https://github.com/user-attachments/assets/7c050112-4ef6-4fd0-b92a-74897fb8d633)
 
-Product Details
+**Product Details**
 
 User view product details, add the product to the cart, user also can select the quantity.
 ![productdetails](https://github.com/user-attachments/assets/68832e8a-321e-476c-9e7d-cb2d79cef17b)
 
 
-Cart
+**Cart**
 
 User view cart, if the user want to delete the cart they can just simply click the clear cart button.
 <img src="./image/Cart.png" width="100%">
 
-Shipping and Checkout
+**Shipping and Checkout**
 
 User fill in their details(eg;address and name), and proceed to checkout.
 <img src="./image/Shipping and checkout.png" width="100%">
 
-Order Confirmation
+**Order Confirmation**
 
 User received order confirmation.
 <img src="./image/image/confirmation1.png" width="100%">
 <img src="./image/image/confirmation2.png" width="100%">
 
-User Order List
+**User Order List**
 
 User can view their order history.
 <img src="./image/image/order.png" width="100%">
@@ -181,55 +182,55 @@ User Order Details
 ![orderdetails2](https://github.com/user-attachments/assets/ef154230-6fda-4288-8b6e-435dd8e472be)
 ![orderdetails3](https://github.com/user-attachments/assets/5f5fdd96-06af-4f3c-9e2a-6de0b0bad9f8)
 
-**Admin**
+### Admin
 
-Admin page
+**Admin page**
 
 <img src="./image/image/admin page.png" width="100%">
 
-Add Product
+**Add Product**
 
 <img src="./image/image/add product.png" width="100%">
 
-Product List
+**Product List**
 
 ![productlist](https://github.com/user-attachments/assets/047e711b-64c1-441f-822d-f7183118eeae)
 
 
 
 
-Add brand
+**Add brand**
 
 <img src="./image/image/add brand.png" width="100%">
 
-Brand List
+**Brand List**
 
 <img src="./image/image/view brand.png" width="100%">
 
-Add Category
+**Add Category**
 
 <img src="./image/image/add category.png" width="100%">
 
-Category List
+**Category List**
 
 ![categorylist](https://github.com/user-attachments/assets/ad4dbd29-9e39-4743-a951-6935f1fdbbc3)
 
-Order List
+**Order List**
 
 ![Screenshot 2025-01-13 203014](https://github.com/user-attachments/assets/e1dc6a67-3fb3-47d5-a208-049e67564398)
 
-Order Details
+**Order Details**
 
 ![adminorderdetails](https://github.com/user-attachments/assets/fadfe449-44dc-4446-b093-9ad409360b74)
 
-Admin Update Order Status
+**Admin Update Order Status**
 <img src="./image/image/update.png" width="100%">
 
-Coupon Add and Update(Admin & Seller)
+**Coupon Add and Update(Admin & Seller)**
 
 <img width="1440" alt="Screenshot 2025-01-14 at 10 50 05 AM" src="https://github.com/user-attachments/assets/7d244d44-5e1e-47b3-97b8-2d0e39a8566f" />
 
-Coupon Lists
+**Coupon Lists**
 
 <img width="1440" alt="Screenshot 2025-01-14 at 10 49 45 AM" src="https://github.com/user-attachments/assets/00e4b50a-dd7d-4016-b953-321c05deda6a" />
 

@@ -236,7 +236,7 @@ admin view order details
 
 **Admin Update Order Status**
 
-admin update order status(ordered, delievered, cancel)
+admin update order status(ordered, delivered, cancel)
 <img src="./image/image/update.png" width="100%">
 
 **Coupon Add and Update(Admin & Seller)**
@@ -258,6 +258,10 @@ Initially, our group faced some difficulties in setting up collaboration among t
 **Composer Installation Failure**
 
 One member of our group encountered difficulties running the composer install command due to multiple failed dependency installations, including phpunit/phpunit and symfony/polyfill-ctype. After troubleshooting with the lecturer's guidance, it was found that the issue was caused by interference from antivirus software and the Windows Search service. This problem delayed the project setup for the member and required uninstalling the antivirus and stopping the Windows Search service to resolve the issue. Once these steps were taken, the installation was completed successfully.
+
+**Image Display Error**
+
+Another challenge we faced was that uploaded images would not show up in the website application. After several attempts to resolve the problem independently, one of our group members finally identified the error. This issue was caused by a combination of factors, including incorrect file paths, misconfigured file permissions, and an improperly set storage link.
 
 ## References
 1.Visual Paradigm. (2019). What is Entity Relationship Diagram (ERD)? Visual-Paradigm.com. 

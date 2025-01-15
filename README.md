@@ -177,7 +177,9 @@ User received order confirmation.
 User can view their order history.
 <img src="./image/image/order.png" width="100%">
 
-User Order Details
+**User Order Details**
+
+User can view their order details
 ![orderdetails1](https://github.com/user-attachments/assets/b912169f-20bd-4b24-ba18-1a242b9e5ebe)
 ![orderdetails2](https://github.com/user-attachments/assets/ef154230-6fda-4288-8b6e-435dd8e472be)
 ![orderdetails3](https://github.com/user-attachments/assets/5f5fdd96-06af-4f3c-9e2a-6de0b0bad9f8)

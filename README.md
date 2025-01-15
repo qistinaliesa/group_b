@@ -125,6 +125,8 @@ Seller can view the buyer's return and refund request and take action.
 ## Sequence Diagram
 ![onlinemarketsequencediagram drawio (1)](https://github.com/user-attachments/assets/d12d3714-d2ef-4113-ba53-27b11b0079a1)
 
+# FINAL REPORT
+
 ## Project system captured screen and explanation
 **Customer**
 Homepage

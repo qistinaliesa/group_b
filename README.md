@@ -241,7 +241,7 @@ admin update order status(ordered, delievered, cancel)
 
 **Coupon Add and Update(Admin & Seller)**
 
-admin add coupon code
+admin add and update coupon code
 <img width="1440" alt="Screenshot 2025-01-14 at 10 50 05 AM" src="https://github.com/user-attachments/assets/7d244d44-5e1e-47b3-97b8-2d0e39a8566f" />
 
 **Coupon Lists**
